@@ -1,0 +1,19 @@
+Time to first dermatologic event - safety population
+
+Median time to event (days) with 95% CI
+                          records events median 0.95LCL 0.95UCL
+TRTA=Placebo                   86     30     NA      NA      NA
+TRTA=Xanomeline Low Dose       96     65     31      27      46
+TRTA=Xanomeline High Dose      72     61     30      20      46
+
+Log-rank test: chi-square = 62.93 on 2 df, p = <0.001 
+
+Cox model, hazard ratio vs placebo (95% CI)
+                         exp(coef) lower .95 upper .95
+TRTAXanomeline Low Dose       4.05       2.6      6.30
+TRTAXanomeline High Dose      5.18       3.3      8.14
+
+Proportional hazards check (Schoenfeld residuals)
+          chisq df         p
+TRTA   1.216379  2 0.5443354
+GLOBAL 1.216379  2 0.5443354
