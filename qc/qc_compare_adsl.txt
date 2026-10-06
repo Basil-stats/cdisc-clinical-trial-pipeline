@@ -1,0 +1,58 @@
+  The COMPARE Procedure                                                        
+                                            Comparison of WORK.SAS_ADSL with WORK.R_ADSL                                            
+                                                (Method=ABSOLUTE, Criterion=1.0E-08)                                                
+                                                                                                                                    
+                                                         Data Set Summary                                                           
+                                                                                                                                    
+             Dataset                 Created          Modified  NVar    NObs  Label                                                 
+                                                                                                                                    
+             WORK.SAS_ADSL  06OCT26:11:03:26  06OCT26:11:03:26    32     306  Subject-Level Analysis Dataset                        
+             WORK.R_ADSL    06OCT26:11:03:26  06OCT26:11:03:26    32     306  Subject-Level Analysis Dataset                        
+                                                                                                                                    
+                                                                                                                                    
+                                                         Variables Summary                                                          
+                                                                                                                                    
+                                         Number of Variables in Common: 32.                                                         
+                                         Number of Variables with Differing Attributes: 8.                                          
+                                         Number of ID Variables: 1.                                                                 
+                                                                                                                                    
+                                                                                                                                    
+                                       Listing of Common Variables with Differing Attributes                                        
+                                                                                                                                    
+                   Variable  Dataset        Type  Length  Format  Informat  Label                                                   
+                                                                                                                                    
+                   trtsdt    WORK.SAS_ADSL  Num        8  DATE9.            Date of First Exposure to Treatment                     
+                             WORK.R_ADSL    Num        8  DATE.   DATE.     Date of First Exposure to Treatment                     
+                   trtedt    WORK.SAS_ADSL  Num        8  DATE9.            Date of Last Exposure to Treatment                      
+                             WORK.R_ADSL    Num        8  DATE.   DATE.     Date of Last Exposure to Treatment                      
+                   randdt    WORK.SAS_ADSL  Num        8  DATE9.            Date of Randomization                                   
+                             WORK.R_ADSL    Num        8  DATE.   DATE.     Date of Randomization                                   
+                   dcsreas   WORK.SAS_ADSL  Char      40                    Reason for Discontinuation from Study                   
+                             WORK.R_ADSL    Char      27                    Reason for Discontinuation from Study                   
+                   eosdt     WORK.SAS_ADSL  Num        8  DATE9.            End of Study Date                                       
+                             WORK.R_ADSL    Num        8  DATE.   DATE.     End of Study Date                                       
+                   trt01p    WORK.SAS_ADSL  Char      40                    Planned Treatment for Period 01                         
+                             WORK.R_ADSL    Char      20                    Planned Treatment for Period 01                         
+                   trt01a    WORK.SAS_ADSL  Char      40                    Actual Treatment for Period 01                          
+                             WORK.R_ADSL    Char      20                    Actual Treatment for Period 01                          
+                   dthdt     WORK.SAS_ADSL  Num        8  DATE9.            Date of Death                                           
+                             WORK.R_ADSL    Num        8  DATE.   DATE.     Date of Death                                           
+                                                                                                                                    
+                                                                                                                                    
+                                                        Observation Summary                                                         
+                                                                                                                                    
+                                           Observation      Base  Compare  ID                                                       
+                                                                                                                                    
+                                           First Obs           1        1  USUBJID=01-701-1015                                      
+                                           Last  Obs         306      306  USUBJID=01-718-1427                                      
+                                                                                                                                    
+                                  Number of Observations in Common: 306.                                                            
+                                  Total Number of Observations Read from WORK.SAS_ADSL: 306.                                        
+                                  Total Number of Observations Read from WORK.R_ADSL: 306.                                          
+                                                                                                                                    
+                                  Number of Observations with Some Compared Variables Unequal: 0.                                   
+                                  Number of Observations with All Compared Variables Equal: 306.                                    
+                                                                                                                                    
+                                  NOTE: No unequal values were found. All values compared are exactly equal.                        
+                                                                                                                                    
+ User: u62756127
