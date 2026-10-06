@@ -6,12 +6,12 @@ Statistical programming for the CDISC pilot study (CDISCPILOT01: xanomeline tran
 
 | Step | Dataset / output | R | SAS | QC |
 |---|---|---|---|---|
-| 1 | ADSL – subject-level dataset | ✅ | ⏳ | ⏳ |
-| 2 | ADAE – adverse events | ✅ | ⏳ | ⏳ |
-| 3 | ADTTE – time to first dermatologic event | ✅ | ⏳ | ⏳ |
-| 4 | Table 14.1.1 – demographics | ✅ | ⏳ | – |
-| 5 | Table 14.3.1 – TEAEs by SOC / PT | ✅ | ⏳ | – |
-| 6 | Figure 14.2.1 – Kaplan–Meier plot | ✅ | ⏳ | – |
+| 1 | ADSL – subject-level dataset | ✅ | ✅ | ✅ |
+| 2 | ADAE – adverse events | ✅ | ✅ | ✅ |
+| 3 | ADTTE – time to first dermatologic event | ✅ | ✅ | ✅ |
+| 4 | Table 14.1.1 – demographics | ✅ | ✅ | – |
+| 5 | Table 14.3.1 – TEAEs by SOC / PT | ✅ | ✅ | – |
+| 6 | Figure 14.2.1 – Kaplan–Meier plot | ✅ | ✅ | – |
 
 Derivation rules and the data issues found along the way are in [docs/adam_specs.md](docs/adam_specs.md).
 
