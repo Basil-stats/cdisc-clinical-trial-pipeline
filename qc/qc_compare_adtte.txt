@@ -1,0 +1,58 @@
+                                                       The COMPARE Procedure                                                        
+                                           Comparison of WORK.SAS_ADTTE with WORK.R_ADTTE                                           
+                                                (Method=ABSOLUTE, Criterion=1.0E-08)                                                
+                                                                                                                                    
+                                                         Data Set Summary                                                           
+                                                                                                                                    
+             Dataset                  Created          Modified  NVar    NObs  Label                                                
+                                                                                                                                    
+             WORK.SAS_ADTTE  06OCT26:11:48:21  06OCT26:11:48:21    15     254  Time to Event Analysis Dataset                       
+             WORK.R_ADTTE    06OCT26:11:48:21  06OCT26:11:48:21    15     254  Time to Event Analysis Dataset                       
+                                                                                                                                    
+                                                                                                                                    
+                                                         Variables Summary                                                          
+                                                                                                                                    
+                                         Number of Variables in Common: 15.                                                         
+                                         Number of Variables with Differing Attributes: 8.                                          
+                                         Number of ID Variables: 2.                                                                 
+                                                                                                                                    
+                                                                                                                                    
+                                       Listing of Common Variables with Differing Attributes                                        
+                                                                                                                                    
+                  Variable  Dataset         Type  Length  Format  Informat  Label                                                   
+                                                                                                                                    
+                  paramcd   WORK.SAS_ADTTE  Char       8                    Parameter Code                                          
+                            WORK.R_ADTTE    Char       4                    Parameter Code                                          
+                  param     WORK.SAS_ADTTE  Char      40                    Parameter                                               
+                            WORK.R_ADTTE    Char      39                    Parameter                                               
+                  evntdesc  WORK.SAS_ADTTE  Char      20                    Event or Censoring Description                          
+                            WORK.R_ADTTE    Char      18                    Event or Censoring Description                          
+                  srcdom    WORK.SAS_ADTTE  Char       8                    Source Data                                             
+                            WORK.R_ADTTE    Char       4                    Source Data                                             
+                  srcvar    WORK.SAS_ADTTE  Char       8                    Source Variable                                         
+                            WORK.R_ADTTE    Char       7                    Source Variable                                         
+                  trta      WORK.SAS_ADTTE  Char      40                    Actual Treatment                                        
+                            WORK.R_ADTTE    Char      20                    Actual Treatment                                        
+                  startdt   WORK.SAS_ADTTE  Num        8  DATE9.            Time to Event Origin Date for Subject                   
+                            WORK.R_ADTTE    Num        8  DATE.   DATE.     Time to Event Origin Date for Subject                   
+                  adt       WORK.SAS_ADTTE  Num        8  DATE9.            Analysis Date                                           
+                            WORK.R_ADTTE    Num        8  DATE.   DATE.     Analysis Date                                           
+                                                                                                                                    
+                                                                                                                                    
+                                                        Observation Summary                                                         
+                                                                                                                                    
+                                  Observation      Base  Compare  ID                                                                
+                                                                                                                                    
+                                  First Obs           1        1  USUBJID=01-701-1015 paramcd=TTDE                                  
+                                  Last  Obs         254      254  USUBJID=01-718-1427 paramcd=TTDE                                  
+                                                                                                                                    
+                                  Number of Observations in Common: 254.                                                            
+                                  Total Number of Observations Read from WORK.SAS_ADTTE: 254.                                       
+                                  Total Number of Observations Read from WORK.R_ADTTE: 254.                                         
+                                                                                                                                    
+                                  Number of Observations with Some Compared Variables Unequal: 0.                                   
+                                  Number of Observations with All Compared Variables Equal: 254.                                    
+                                                                                                                                    
+                                  NOTE: No unequal values were found. All values compared are exactly equal.                        
+                                                                                                                                    
+ User: u62756127

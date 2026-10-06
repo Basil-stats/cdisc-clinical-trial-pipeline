@@ -20,7 +20,7 @@ Sex, n (%)
   M                                                        33 ( 38.4)              41 ( 42.7)              37 ( 51.4)             111 ( 43.7)
 Race, n (%)                                                                                                                                  
   WHITE                                                    78 ( 90.7)              90 ( 93.8)              62 ( 86.1)             230 ( 90.6)
-  BLACK OR AFRICAN AMERICAN                                 8 (  9.3)               6 (  6.2)               9 ( 12.5)              23 (  9.1)
+  BLACK OR AFRICAN AMERICAN                                 8 (  9.3)               6 (  6.3)               9 ( 12.5)              23 (  9.1)
   AMERICAN INDIAN OR ALASKA NATIVE                          0 (  0.0)               0 (  0.0)               1 (  1.4)               1 (  0.4)
 Baseline weight (kg)                                                                                                                         
   n                                                                86                      95                      72                     253

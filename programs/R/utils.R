@@ -12,9 +12,21 @@ add_labels <- function(df, labels) {
   df
 }
 
+# round half up (6.25 -> 6.3), the convention SAS uses. base R round() and
+# sprintf() round exact halves to the even digit (6.25 -> 6.2)
+round_half_up <- function(x, digits = 0) {
+  m <- 10^digits
+  sign(x) * floor(abs(x) * m + 0.5 + 1e-9) / m
+}
+
+# format a number to fixed decimals using round_half_up
+fmt_num <- function(x, digits) sprintf(paste0("%.", digits, "f"), round_half_up(x, digits))
+
 # "n (pct)" in the usual table format
 n_pct <- function(n, denom) {
-  ifelse(denom > 0, sprintf("%3d (%5.1f)", n, 100 * n / denom), sprintf("%3d", n))
+  ifelse(denom > 0,
+         sprintf("%3d (%5s)", n, fmt_num(100 * n / denom, 1)),
+         sprintf("%3d", n))
 }
 
 # write a data frame as a fixed-width text table with titles and footnotes.

@@ -1,0 +1,52 @@
+        The COMPARE Procedure                                                        
+                                            Comparison of WORK.SAS_ADAE with WORK.R_ADAE                                            
+                                                (Method=ABSOLUTE, Criterion=1.0E-08)                                                
+                                                                                                                                    
+                                                         Data Set Summary                                                           
+                                                                                                                                    
+             Dataset                 Created          Modified  NVar    NObs  Label                                                 
+                                                                                                                                    
+             WORK.SAS_ADAE  06OCT26:11:40:52  06OCT26:11:40:52    23    1191  Adverse Events Analysis Dataset                       
+             WORK.R_ADAE    06OCT26:11:40:52  06OCT26:11:40:52    23    1191  Adverse Events Analysis Dataset                       
+                                                                                                                                    
+                                                                                                                                    
+                                                         Variables Summary                                                          
+                                                                                                                                    
+                                         Number of Variables in Common: 23.                                                         
+                                         Number of Variables with Differing Attributes: 5.                                          
+                                         Number of ID Variables: 2.                                                                 
+                                                                                                                                    
+                                                                                                                                    
+                                       Listing of Common Variables with Differing Attributes                                        
+                                                                                                                                    
+                    Variable  Dataset        Type  Length  Format  Informat  Label                                                  
+                                                                                                                                    
+                    trtsdt    WORK.SAS_ADAE  Num        8  DATE9.            Date of First Exposure to Treatment                    
+                              WORK.R_ADAE    Num        8  DATE.   DATE.     Date of First Exposure to Treatment                    
+                    trtedt    WORK.SAS_ADAE  Num        8  DATE9.            Date of Last Exposure to Treatment                     
+                              WORK.R_ADAE    Num        8  DATE.   DATE.     Date of Last Exposure to Treatment                     
+                    trta      WORK.SAS_ADAE  Char      40                    Actual Treatment                                       
+                              WORK.R_ADAE    Char      20                    Actual Treatment                                       
+                    astdt     WORK.SAS_ADAE  Num        8  DATE9.            Analysis Start Date                                    
+                              WORK.R_ADAE    Num        8  DATE.   DATE.     Analysis Start Date                                    
+                    aendt     WORK.SAS_ADAE  Num        8  DATE9.            Analysis End Date                                      
+                              WORK.R_ADAE    Num        8  DATE.   DATE.     Analysis End Date                                      
+                                                                                                                                    
+                                                                                                                                    
+                                                        Observation Summary                                                         
+                                                                                                                                    
+                                    Observation      Base  Compare  ID                                                              
+                                                                                                                                    
+                                    First Obs           1        1  USUBJID=01-701-1015 AESEQ=1                                     
+                                    Last  Obs        1191     1191  USUBJID=01-718-1427 AESEQ=16                                    
+                                                                                                                                    
+                                  Number of Observations in Common: 1191.                                                           
+                                  Total Number of Observations Read from WORK.SAS_ADAE: 1191.                                       
+                                  Total Number of Observations Read from WORK.R_ADAE: 1191.                                         
+                                                                                                                                    
+                                  Number of Observations with Some Compared Variables Unequal: 0.                                   
+                                  Number of Observations with All Compared Variables Equal: 1191.                                   
+                                                                                                                                    
+                                  NOTE: No unequal values were found. All values compared are exactly equal.                        
+                                                                                                                                    
+ User: u62756127

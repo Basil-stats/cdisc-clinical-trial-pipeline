@@ -27,11 +27,11 @@ cont_stats <- function(var, label, dp = 1, mm_dp = dp) {
     group_by(TRT01A) %>%
     summarise(
       n           = sprintf("%d", sum(!is.na(.data[[var]]))),
-      `Mean (SD)` = sprintf(paste0("%.", dp, "f (%.", dp + 1, "f)"),
-                            mean(.data[[var]], na.rm = TRUE), sd(.data[[var]], na.rm = TRUE)),
-      Median      = sprintf(paste0("%.", dp, "f"), median(.data[[var]], na.rm = TRUE)),
-      `Min, Max`  = sprintf(paste0("%.", mm_dp, "f, %.", mm_dp, "f"),
-                            min(.data[[var]], na.rm = TRUE), max(.data[[var]], na.rm = TRUE)),
+      `Mean (SD)` = paste0(fmt_num(mean(.data[[var]], na.rm = TRUE), dp), " (",
+                           fmt_num(sd(.data[[var]], na.rm = TRUE), dp + 1), ")"),
+      Median      = fmt_num(median(.data[[var]], na.rm = TRUE), dp),
+      `Min, Max`  = paste0(fmt_num(min(.data[[var]], na.rm = TRUE), mm_dp), ", ",
+                           fmt_num(max(.data[[var]], na.rm = TRUE), mm_dp)),
       .groups = "drop"
     ) %>%
     pivot_longer(-TRT01A, names_to = "stat") %>%

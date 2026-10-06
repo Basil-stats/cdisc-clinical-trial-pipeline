@@ -33,7 +33,9 @@ run;
 title1 'Cox model - hazard ratio vs placebo';
 proc phreg data=tte;
   class trtan(ref='0') / param=ref;
-  model aval * cnsr(1) = trtan / risklimits;
+  /* Efron handles tied event days better than the SAS default (Breslow)
+     and matches R coxph() */
+  model aval * cnsr(1) = trtan / risklimits ties=efron;
   assess ph / resample seed=2026;
 run;
 

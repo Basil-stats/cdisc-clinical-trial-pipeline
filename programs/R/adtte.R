@@ -72,6 +72,7 @@ adtte <- adtte %>%
   arrange(USUBJID, PARAMCD)
 
 adtte <- add_labels(adtte, c(
+  STUDYID = "Study Identifier", USUBJID = "Unique Subject Identifier",
   PARAMCD = "Parameter Code", PARAM = "Parameter", AVAL = "Analysis Value",
   CNSR = "Censor", STARTDT = "Time to Event Origin Date for Subject",
   ADT = "Analysis Date", EVNTDESC = "Event or Censoring Description",

@@ -72,7 +72,7 @@ names(tbl) <- c("System Organ Class\n  Preferred Term",
 
 write_txt_table(
   tbl, "output/t_ae.txt",
-  first_width = 60,
+  first_width = 72,
   titles = c("Table 14.3.1",
              "Treatment-Emergent Adverse Events by System Organ Class and Preferred Term",
              "Safety Population"),
