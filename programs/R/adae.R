@@ -61,6 +61,10 @@ adae <- adae %>%
     filter = TRTEMFL == "Y"
   )
 
+# restrict_derivation() drops variable labels - copy them back from AE and ADSL
+for (v in intersect(names(adae), names(ae)))   attr(adae[[v]], "label") <- attr(ae[[v]], "label")
+for (v in c("TRTSDT", "TRTEDT", "SAFFL"))      attr(adae[[v]], "label") <- attr(adsl[[v]], "label")
+
 adae <- adae %>%
   select(STUDYID, USUBJID, AESEQ, AETERM, AEDECOD, AEBODSYS, AESEV, AESER,
          AEREL, AESTDTC, AEENDTC, ASTDT, ASTDTF, AENDT, ASTDY, AENDY,
